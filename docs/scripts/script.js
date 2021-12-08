@@ -30,4 +30,8 @@ $(document).ready(function() {
     opentab("#ds");
     opentab("#moma");
     opentab("#playlist");
+
+    opentab("#ab");
+    opentab("#graham");
+    opentab("#rc");
 });
