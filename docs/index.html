@@ -4,31 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="stylesheets/colors.css">
     <link rel="stylesheet" href="stylesheets/style.css">
+
+    <script src="https://kit.fontawesome.com/35d2f9faef.js" crossorigin="anonymous"></script>
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+    <script src="scripts/script.js"></script>
+
     <title>Soomin's Portfolio</title>
 </head>
+
 <body>
-    <h1>Soomin's Homepage</h1>
-    <nav class="main-nav">
-        <a href="design">Design</a>
-        <a href="art">Art</a>
-        <a href="about">About</a>
-    </nav>
+    <!-- HEADER -->
+    <header>
+        <span>Soomin Chung</span>
+    </header>
 
-    <nav class="design-nav">
-        <a href="design/brand/because-earth">Because Earth</a>
-        <a href="design/brand/jam-package">Jam Package Design</a>
-        <a href="design/brand/mca">MCA Identity Systems</a>
-        <a href="design/brand/wes-anderson">Wes Anderson Wordmark</a>
-        <a href="design/print/calendar-postcards">2021 Calendar Postcards</a>
-        <a href="design/print/david-smith">The Fields of David Smith</a>
-        <a href="design/print/playlist">Playlist Poster</a>
-    </nav>
 
-    <nav class="art-nav">
-        <a href="art/artist-book">Artist's Book</a>
-        <a href="art/graham-foundation">Graham Foundation Response</a>
-        <a href="art/rhythmic-composition">Rhythmic Composition</a>
-    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <div class="folder design">
+            <img class="icon" src="assets/images/folder.png">
+            <p class="title">Design</p>
+        </div>
+        <div class="folder art">
+            <img class="icon" src="assets/images/folder.png">
+            <p class="title">Art</p>
+        </div>
+        <div class="folder about">
+            <img class="icon" src="assets/images/about.png">
+            <p class="title">About</p>
+        </div>
+
+
+
+        <!-- 1 -->
+
+        <div class="tab design" title="Design">
+                <span class="tag">Brand</span>
+                <div>
+                    <div class="folder" id="wa">
+                        <img class="icon" src="assets/images/wes-anderson.png">
+                        <p class="title">Wes Anderson</p>
+                    </div>
+                    <div class="folder" id="mca">
+                        <img class="icon" src="assets/images/mca.png">
+                        <p class="title">MCA</p>
+                    </div>
+                    <div class="folder" id="be">
+                        <img class="icon" src="assets/images/because-earth.png">
+                        <p class="title">Because Earth</p>
+                    </div>
+                    <div class="folder" id="jam">
+                        <img class="icon" src="assets/images/jam.png">
+                        <p class="title">Jam</p>
+                    </div>
+                </div>
+            <span class="tag">Print</span>
+            <div>
+                <div class="folder" id="calendar">
+                    <img class="icon" src="assets/images/calendar.png">
+                    <p class="title">Calendar</p>
+                </div>
+                <div class="folder" id="ds">
+                    <img class="icon" src="assets/images/david-smith.png">
+                    <p class="title">David Smith</p>
+                </div>
+                <div class="folder" id="moma">
+                    <img class="icon" src="assets/images/moma.png">
+                    <p class="title">MoMA</p>
+                </div>
+                <div class="folder" id="playlist">
+                    <img class="icon" src="assets/images/playlist.png">
+                    <p class="title">Playlist</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab art" title="Art">
+                <div class="folder" id="ab">
+                    <img class="icon" src="assets/images/artist-book.png">
+                    <p class="title">Artist's Book</p>
+                </div>
+                <div class="folder" id="graham">
+                    <img class="icon" src="assets/images/graham.png">
+                    <p class="title">Graham Foundation</p>
+                </div>
+                <div class="folder" id="rc">
+                    <img class="icon" src="assets/images/rhythmic-comp.png">
+                    <p class="title">Rhythmic Composition</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab about" title="About Me"></div>
+
+
+
+        <!-- Wes Anderson -->
+
+        <div class="tab" id="wa" title="Wes Anderson Wordmark">
+            <img src="assets/images/wes-anderson/0.jpeg">
+            <img src="assets/images/wes-anderson/1.jpeg">
+            <img src="assets/images/wes-anderson/2.jpeg">
+            <img src="assets/images/wes-anderson/3.jpeg">
+            <img src="assets/images/wes-anderson/4.jpeg">
+            <img src="assets/images/wes-anderson/5.jpeg">
+        </div>
+
+        <!-- MCA -->
+
+        <div class="tab" id="mca" title="MCA Identity System">
+
+        </div>
+
+        <!-- Calendar Postcard -->
+
+        <div class="tab" id="calendar" title="2021 Calendar Postcard Series">
+            <img src="assets/images/calendar/postcard-1.jpeg">
+            <img src="assets/images/calendar/postcard-2.jpeg">
+            <img src="assets/images/calendar/postcard-3.jpeg">
+            <img src="assets/images/calendar/postcard-4.jpeg">
+        </div>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <img class="icon" src="assets/images/mca.png">
+        <img class="icon" src="assets/images/wes-anderson.png">
+        <img class="icon" src="assets/images/moma.png">
+        <img class="icon" src="assets/images/calendar.png">
+    </footer>
 </body>
 </html>

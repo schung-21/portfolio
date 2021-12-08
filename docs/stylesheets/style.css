@@ -1,0 +1,123 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    color: var(--color-txt);
+    font-family: 'Poppins', sans-serif;
+}
+
+html {overflow: hidden;}
+h1 {margin: 3rem 0;}
+a {text-decoration: none;}
+
+
+
+/* HEADER */
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: .3rem 1rem;
+    background: var(--color-1);
+    border-bottom: 2px solid;
+}
+
+
+
+/* MAIN */
+
+main {
+    background: var(--color-bg);
+    width: 100vw; height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.folder {margin: 1rem 2rem;}
+main > .folder:first-child {margin-top: 5rem;}
+.folder .icon {width: 4rem;}
+.folder .title {text-align: center;}
+
+
+
+/* TABS */
+
+.ui-dialog {
+    box-sizing: content-box;
+    border: 2px solid;
+    border-radius: .5rem;
+    background: var(--color-2);
+    overflow: scroll;
+}
+
+.ui-dialog-titlebar {
+    position: fixed; 
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid;
+    border-radius: .5rem .5rem 0 0;
+    background: var(--color-1);
+}
+
+.ui-dialog-title {margin: .3rem 1rem;}
+
+.ui-dialog-titlebar-close {
+    width: 1.5rem; margin: .3rem;
+    background: var(--color-txt);
+    color: var(--color-1);
+    border: 2px solid var(--color-txt);
+    border-radius: .3rem;
+}
+
+.ui-dialog-titlebar-close::before {font-family: "Font Awesome 5 Free";font-weight: 900; content: "\f00d";}
+
+.ui-dialog-content {margin: 4rem 2rem 0;}
+
+.tag {
+    display: inline-block;
+    padding: .3rem 1rem;
+    border: 2px solid var(--color-txt);
+    border-radius: .5rem;
+    background: var(--color-3);
+    color: var(--color-bg);
+}
+
+.tag:not(:first-child) {margin-top: 3rem;}
+
+.tab.design > div, .tab.art {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab .folder {
+    flex-basis: 0;
+}
+
+.tab img {
+    width: 900px;
+}
+
+#calendar img {
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 99;
+    background: var(--color-2);
+    width: 30rem; height: 5rem;
+    bottom: 1rem; left: 50%; 
+    transform: translateX(-50%);
+    border: 2px solid;
+    border-radius: 1rem;
+}
+
+footer .icon {
+    scale: 85%;
+}
