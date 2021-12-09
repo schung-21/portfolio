@@ -9,6 +9,7 @@ $(document).ready(function() {
     $(".tab.design").dialog({width: 600});
     $(".tab.art").dialog({width: 500});
     $(".tab#calendar").dialog({width: 800});
+    $(".tab#moma, .tab#playlist").dialog({width: 500, height: 700});
 
     function opentab(id) {
         var button = ".folder" + id;

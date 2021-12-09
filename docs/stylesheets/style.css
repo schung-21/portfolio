@@ -34,7 +34,7 @@ main {
     overflow: hidden;
 }
 
-.folder {margin: 1rem 2rem;}
+.folder {margin: 1rem 2rem; cursor: pointer;}
 main > .folder:first-child {margin-top: 5rem;}
 .folder .icon {width: 4rem;}
 .folder .title {text-align: center;}
@@ -59,6 +59,7 @@ main > .folder:first-child {margin-top: 5rem;}
     border-bottom: 2px solid;
     border-radius: .5rem .5rem 0 0;
     background: var(--color-1);
+    cursor: default; 
 }
 
 .ui-dialog-title {margin: .3rem 1rem;}
@@ -69,11 +70,13 @@ main > .folder:first-child {margin-top: 5rem;}
     color: var(--color-1);
     border: 2px solid var(--color-txt);
     border-radius: .3rem;
+    cursor: pointer;
 }
 
 .ui-dialog-titlebar-close::before {font-family: "Font Awesome 5 Free";font-weight: 900; content: "\f00d";}
 
 .ui-dialog-content {margin: 4rem 2rem 0;}
+
 
 .tag {
     display: inline-block;
@@ -91,17 +94,18 @@ main > .folder:first-child {margin-top: 5rem;}
     justify-content: space-between;
 }
 
-.tab .folder {
-    flex-basis: 0;
+.tab .folder {flex-basis: 0;}
+
+.tab img:not([class="icon"]) {
+    display: block;
+    width: 90%;
+    margin: 3rem auto;
 }
 
-.tab img {
-    width: 900px;
-}
+.tab h1, .tab h2, .tab h3, .tab p:not([class="title"]) {margin: 3rem 3rem 1rem;}
 
-#calendar img {
-    width: 100%;
-}
+#calendar img:not([class="icon"]), #moma img:not([class="icon"]), #playlist img:not([class="icon"]) {width: 100%;}
+#mca p {text-align: center;}
 
 /* FOOTER */
 
@@ -119,5 +123,6 @@ footer {
 }
 
 footer .icon {
-    scale: 85%;
+    cursor: pointer;
+    scale: 130%;
 }
