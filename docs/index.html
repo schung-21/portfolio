@@ -5,21 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" type="images" href="assets/images/favicon.png">
+
     <link rel="stylesheet" href="stylesheets/colors.css">
     <link rel="stylesheet" href="stylesheets/style.css">
 
     <script src="https://kit.fontawesome.com/35d2f9faef.js" crossorigin="anonymous"></script>
     <script src="lib/jquery-3.6.0.min.js"></script>
     <script src="lib/jquery-ui.min.js"></script>
-    <script src="scripts/script.js"></script>
+    
 
-    <title>Soomin's Portfolio</title>
+    <title>Soomin Chung</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <span>Soomin Chung</span>
+        <div class="header-l">
+            <span>Soomin Chung</span>
+        </div>
+        <div class="header-r">
+            <i class="fab fa-bluetooth-b"></i>
+            <i class="fas fa-wifi"></i>
+            <span id="date"></span>
+            <span id="time"></span>
+        </div>
     </header>
 
 
@@ -85,18 +95,17 @@
         </div>
 
         <div class="tab art" title="Art">
-                <div class="folder" id="ab">
-                    <img class="icon" src="assets/images/artist-book.png">
-                    <p class="title">Artist's Book</p>
-                </div>
-                <div class="folder" id="graham">
-                    <img class="icon" src="assets/images/graham.png">
-                    <p class="title">Graham Foundation</p>
-                </div>
-                <div class="folder" id="rc">
-                    <img class="icon" src="assets/images/rhythmic-comp.png">
-                    <p class="title">Rhythmic Composition</p>
-                </div>
+            <div class="folder" id="ab">
+                <img class="icon" src="assets/images/artist-book.png">
+                <p class="title">Artist's Book</p>
+            </div>
+            <div class="folder" id="graham">
+                <img class="icon" src="assets/images/graham.png">
+                <p class="title">Graham Foundation</p>
+            </div>
+            <div class="folder" id="rc">
+                <img class="icon" src="assets/images/rhythmic-comp.png">
+                <p class="title">Rhythmic Composition</p>
             </div>
         </div>
 
@@ -140,11 +149,37 @@
 
         <!-- Because Earth -->
 
-        <div class="tab" id="be" title="Field Museum: Because Earth"></div>
+        <div class="tab" id="be" title="Field Museum: Because Earth">
+            <h3>Sketches</h3>
+            <img src="assets/images/because-earth/sketch-1.jpeg">
+            <img src="assets/images/because-earth/sketch-2.jpeg">
+            <img src="assets/images/because-earth/sketch-3.jpeg">
+            <img src="assets/images/because-earth/sketch-4.jpeg">
+            <img src="assets/images/because-earth/sketch-5.jpeg">
+            <h2>Final Collateral Pieces</h2>
+            <img src="assets/images/because-earth/poster.jpeg">
+            <p>Poster</p>
+            <img src="assets/images/because-earth/teaser.jpeg">
+            <p>Teaser</p>
+            <img class="inline" src="assets/images/because-earth/invitation-1.jpeg">
+            <img class="inline" src="assets/images/because-earth/invitation-2.jpeg">
+            <p>Invitation</p>
+            <img src="assets/images/because-earth/ticket-1.jpeg">
+            <img src="assets/images/because-earth/ticket-2.jpeg">
+            <img src="assets/images/because-earth/ticket-3.jpeg">
+            <p>Tickets</p>
+            <img class="inline" src="assets/images/because-earth/house-organ-1.jpeg">
+            <img class="inline" src="assets/images/because-earth/house-organ-2.jpeg">
+            <p>House Organ</p>
+            <img src="assets/images/because-earth/book.png">
+            <p>Book: <em>A Natural History of the Chicago Region</em></p>
+        </div>
 
         <!-- Jam -->
 
-        <div class="tab" id="jam" title="Hero Jam Package Design"></div>
+        <div class="tab" id="jam" title="Hero Jam Package Design">
+            <img src="assets/images/jam/print.png">
+        </div>
 
         <!-- Calendar Postcard -->
 
@@ -181,5 +216,6 @@
         <img class="folder icon" id="moma" src="assets/images/moma.png">
         <img class="folder icon" id="calendar" src="assets/images/calendar.png">
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
