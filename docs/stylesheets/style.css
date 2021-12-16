@@ -24,6 +24,10 @@ header {
     cursor: default;
 }
 
+.header-l span:first-child {
+    font-weight: bold;
+}
+
 header i, header span:not(:last-child) {margin-right: 1rem;}
 
 
