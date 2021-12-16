@@ -12,6 +12,10 @@ $(document).ready(function() {
         position: {collision: "none"}
     });
 
+    $(".tab.web").dialog({
+        width: 1100,
+        height: 700
+    });
     $(".tab.design").dialog({width: 600});
     $(".tab.art").dialog({width: 500});
     $(".tab#calendar").dialog({width: 800});
@@ -29,6 +33,7 @@ $(document).ready(function() {
         $(this).dialog("moveToTop");
     });
 
+    opentab(".web");
     opentab(".design");
     opentab(".art");
     opentab(".about");

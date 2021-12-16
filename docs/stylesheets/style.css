@@ -87,6 +87,22 @@ main > .folder:first-child {margin-top: 5rem;}
 
 .ui-dialog-content {margin: 4rem 2rem 0;}
 
+.web.ui-dialog-content {
+    margin: 2.3rem 0 0;
+}
+
+.web iframe {
+    width: 110%;
+    height: 1000px;
+    -ms-zoom: 0.9;
+    -moz-transform: scale(0.9);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.9);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.9);
+    -webkit-transform-origin: 0 0;
+}
+
 
 .tag {
     display: inline-block;
